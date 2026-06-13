@@ -72,7 +72,8 @@ Commit en français : `feat: carte de la Suisse (refs #1)`.
 Dans @main.js, va chercher les brasseries de Suisse et affiche-les sur
 la carte :
 - Requête à envoyer : copie le contenu de @query-overpass.txt vers
-  https://overpass-api.de/api/interpreter (POST).
+  https://overpass.osm.ch/api/interpreter (POST) — instance suisse de
+  l'API Overpass, CORS configuré pour le navigateur.
 - Un seul fetch au chargement (pas de re-fetch).
 - Un marker Leaflet par brasserie qui a des coordonnées.
 - En cas d'erreur réseau, affiche un message dans le pied de page.

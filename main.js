@@ -2,7 +2,10 @@
 
 const SWITZERLAND_CENTER = [46.8, 8.3];
 const DEFAULT_ZOOM = 8;
-const OVERPASS_URL = 'https://overpass-api.de/api/interpreter';
+// Instance suisse, CORS OK. Alternatives en cas de panne :
+// https://maps.mail.ru/osm/tools/overpass/api/interpreter
+// https://overpass-api.de/api/interpreter (officiel, souvent surchargé)
+const OVERPASS_URL = 'https://overpass.osm.ch/api/interpreter';
 
 const OVERPASS_QUERY = `
 [out:json][timeout:25];
