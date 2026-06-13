@@ -1,0 +1,15 @@
+{
+  "name": "2026-c822-vibe-coding-demo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "App demo Brasseries de Suisse - seance vibe coding C822",
+  "scripts": {
+    "dev": "live-server --port=8080 --no-browser",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "live-server": "^1.2.2"
+  }
+}
