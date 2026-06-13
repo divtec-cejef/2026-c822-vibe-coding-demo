@@ -46,7 +46,9 @@ ressources/
 │   ├── v3-structure.md       # + structure projet + commandes utiles
 │   └── v4-final.md           # + règles métier + souveraineté (version finale)
 ├── 01-design-md/
-│   └── DESIGN.md             # Identité visuelle, généré au §6.1b
+│   ├── DESIGN.md             # Identité visuelle (spec écrite, lue par Claude)
+│   ├── style.css             # Variables CSS issues de DESIGN.md (réutilisé dans l'app)
+│   └── styleguide.html       # Page de validation visuelle du DS (à ouvrir dans le navigateur)
 ├── 02-maquette/
 │   ├── maquette-desktop.png
 │   └── maquette-mobile.png
