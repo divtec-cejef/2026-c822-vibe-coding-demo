@@ -11,7 +11,7 @@ git switch main && git pull
 git switch -c feat/github-pages
 ```
 
-Ouvre **l'issue #4** sur GitHub (« Déploiement automatique sur GitHub Pages »), attribue-la-toi.
+Attribue-toi **l'issue #4** sur GitHub (`gh issue edit 4 --add-assignee @me`). Elle a été créée à l'[Étape 0 du README](../../README.md#étape-0--créer-les-4-issues-github-avant-le-1er-prompt).
 
 > ⚠️ **Activer GitHub Pages côté GitHub avant le push** : Settings → Pages → Source : **GitHub Actions**. Sinon le workflow va échouer.
 
