@@ -13,7 +13,7 @@
 > git switch -c feat/search-by-name
 > ```
 
-Ouvre **l'issue #2** sur GitHub, attribue-la-toi.
+Attribue-toi **l'issue #2** sur GitHub (`gh issue edit 2 --add-assignee @me`). Elle a été créée à l'[Étape 0 du README](../../README.md#étape-0--créer-les-4-issues-github-avant-le-1er-prompt).
 
 ---
 

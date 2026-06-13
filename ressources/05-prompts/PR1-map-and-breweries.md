@@ -6,14 +6,16 @@
 
 ## Avant de démarrer
 
-> ⚠️ Vérifie que tu es à jour sur `main` puis crée la branche :
->
-> ```bash
-> git switch main && git pull
-> git switch -c feat/map-and-breweries
-> ```
+> ⚠️ **Les 4 issues GitHub doivent déjà exister** — voir [Étape 0 du README](../../README.md#étape-0--créer-les-4-issues-github-avant-le-1er-prompt). Si tu n'as pas créé les issues, fais-le maintenant.
 
-Ouvre **l'issue #1** sur GitHub, attribue-la-toi.
+Crée la branche depuis `main` à jour :
+
+```bash
+git switch main && git pull
+git switch -c feat/map-and-breweries
+```
+
+Attribue-toi **l'issue #1** sur GitHub (`gh issue edit 1 --add-assignee @me`).
 
 ---
 

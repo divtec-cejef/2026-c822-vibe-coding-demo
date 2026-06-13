@@ -83,6 +83,46 @@ Voir la liste des tags plus bas.
 
 ---
 
+## Étape 0 — Créer les 4 issues GitHub (avant le 1er prompt)
+
+Les prompts numérotés (`PR1`, `PR2`, `P-pages`) terminent leurs commits par `closes #N` — c'est ce qui ferme automatiquement une issue GitHub au merge. **Mais si l'issue n'existe pas, `closes #N` ne ferme rien.**
+
+Donc **avant** d'attaquer le moindre prompt, ouvre les 4 issues sur ton dépôt de séance. Deux manières :
+
+### Option A — En CLI avec `gh` (recommandé, 30 secondes)
+
+Dans le terminal de ton dépôt :
+
+```bash
+gh issue create --title "PR1 - Carte + brasseries" \
+  --body "Carte Leaflet centrée sur la Suisse + 271 pins + popup au clic. Prompts : ressources/05-prompts/PR1-map-and-breweries.md"
+
+gh issue create --title "PR2 - Recherche par nom + CI" \
+  --body "Champ recherche dans le header + filtre insensible casse/accents + test Playwright. Prompts : ressources/05-prompts/PR2-search-by-name.md"
+
+gh issue create --title "PR3 - Marquage des brasseries visitées" \
+  --body "Bouton 'Marquer comme visitée' dans le popup + persistance localStorage + 2e test Playwright. Prompts : section PR 3 plus bas dans ce README."
+
+gh issue create --title "Déploiement GitHub Pages" \
+  --body "Workflow .github/workflows/pages.yml. Prompts : ressources/05-prompts/P-pages-deploy.md"
+```
+
+Les issues sont numérotées **#1, #2, #3, #4** dans l'ordre — exactement ce que `closes #N` attend dans les prompts.
+
+### Option B — Via GitHub.com
+
+Settings dépôt → onglet **Issues** → bouton **New issue** × 4. Vérifie que la numérotation finit bien à 1/2/3/4 (si tu fais des essais avant, tu vas décaler).
+
+### Vérification
+
+```bash
+gh issue list
+```
+
+Tu dois voir 4 issues `#1`, `#2`, `#3`, `#4` ouvertes. Tu peux maintenant attaquer **PR1**.
+
+---
+
 ## Tags Git — récupérer un état complet du code
 
 | Tag | État du code |
