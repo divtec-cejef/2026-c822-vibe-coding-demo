@@ -39,28 +39,47 @@ Voir la liste des tags plus bas.
 ## Contenu
 
 ```
-ressources/
-├── 00-claude-md/        # CLAUDE.md projet — 4 versions illustrant l'évolution itérative
-│   ├── v1-stack-git.md       # Posé en premier : stack + Git Flow + conventions
-│   ├── v2-design-ref.md      # + référence DESIGN.md (après §6.1b)
-│   ├── v3-structure.md       # + structure projet + commandes utiles
-│   └── v4-final.md           # + règles métier + souveraineté (version finale)
-├── 01-design-md/
-│   ├── DESIGN.md             # Identité visuelle (spec écrite, lue par Claude)
-│   ├── style.css             # Variables CSS issues de DESIGN.md (réutilisé dans l'app)
-│   └── styleguide.html       # Page de validation visuelle du DS (à ouvrir dans le navigateur)
-├── 02-maquette/
-│   ├── maquette-desktop.png
-│   └── maquette-mobile.png
-├── 03-spec/
-│   └── SPEC.md               # Mini-spec : 1 entité + 5 fonctionnalités avec critères vérifiables
-├── 04-data/
-│   └── query-overpass.txt    # Requête Overpass prête à coller
-└── 05-prompts/
-    ├── PR1-map-and-breweries.md
-    ├── PR2-search-by-name.md
-    └── P-pages-deploy.md
+.
+├── index.html               # ← app Brasseries CH (état final, sur main)
+├── style.css
+├── main.js
+├── libs/leaflet/            # Leaflet 1.9.4 self-hosté (pas de CDN)
+├── tests/map.spec.js        # Test e2e Playwright
+├── playwright.config.js
+├── package.json             # Dépendance dev : @playwright/test
+├── .github/workflows/
+│   ├── test.yml             # Lance le test e2e à chaque push
+│   └── pages.yml            # Publie le site quand une PR est mergée sur main
+└── ressources/              # ↓ Les artefacts à copier dans TON dépôt perso
+    ├── 00-claude-md/        # CLAUDE.md projet — 4 versions illustrant l'évolution itérative
+    │   ├── v1-stack-git.md       # Posé en premier : stack + Git Flow + conventions
+    │   ├── v2-design-ref.md      # + référence DESIGN.md (après §6.1b)
+    │   ├── v3-structure.md       # + structure projet + commandes utiles
+    │   └── v4-final.md           # + règles métier + souveraineté (version finale)
+    ├── 01-design-md/
+    │   ├── DESIGN.md             # Identité visuelle (spec écrite, lue par Claude)
+    │   ├── style.css             # Variables CSS issues de DESIGN.md (réutilisé dans l'app)
+    │   └── styleguide.html       # Page de validation visuelle du DS (à ouvrir dans le navigateur)
+    ├── 02-maquette/
+    │   ├── maquette-desktop.png
+    │   └── maquette-mobile.png
+    ├── 03-spec/
+    │   └── SPEC.md               # Mini-spec : 1 entité + 6 fonctionnalités avec critères vérifiables
+    ├── 04-data/
+    │   └── query-overpass.txt    # Requête Overpass prête à coller
+    └── 05-prompts/
+        ├── PR1-map-and-breweries.md
+        ├── PR2-search-by-name.md
+        └── P-pages-deploy.md
 ```
+
+> **Le code de l'app** (`index.html`, `main.js`, etc.) est ce que tu obtiens **en théorie** après avoir suivi les prompts de la séance. Tu peux :
+>
+> * Ne pas y regarder → fais la séance les yeux fermés, compare à la fin.
+> * Y regarder **après** chaque PR mergée pour vérifier que tu as bien le même résultat.
+> * Faire `git checkout etape-N` pour récupérer un état complet si tu bloques.
+>
+> ⚠️ **Ne copie pas le code dans ton dépôt perso au lieu de le générer avec Claude Code.** Le but de la séance c'est l'expérience du vibe coding, pas le résultat.
 
 ---
 
