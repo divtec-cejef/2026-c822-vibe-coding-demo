@@ -65,10 +65,34 @@ async function loadBreweries() {
   }
 }
 
+function buildPopupContent(brewery) {
+  const lines = [`<strong>${escapeHtml(brewery.name)}</strong>`];
+  if (brewery.city) lines.push(`<div>${escapeHtml(brewery.city)}</div>`);
+  if (brewery.website) {
+    lines.push(
+      `<a href="${escapeAttr(brewery.website)}" target="_blank" rel="noopener">Visiter le site web →</a>`
+    );
+  }
+  return lines.join('');
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+function escapeAttr(value) {
+  return escapeHtml(value).replace(/"/g, '&quot;');
+}
+
 function addBreweryMarker(brewery) {
   L.marker([brewery.lat, brewery.lon], {
     title: brewery.name,
-  }).addTo(map);
+  })
+    .addTo(map)
+    .bindPopup(buildPopupContent(brewery));
 }
 
 loadBreweries();
