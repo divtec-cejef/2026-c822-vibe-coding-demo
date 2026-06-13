@@ -83,7 +83,9 @@ Voir la liste des tags plus bas.
 
 ---
 
-## Étape 0 — Créer les 4 issues GitHub (avant le 1er prompt)
+## Étape 0 — Avant le 1er prompt : 3 réflexes
+
+### 1. Créer les 4 issues GitHub
 
 Les prompts numérotés (`PR1`, `PR2`, `P-pages`) terminent leurs commits par `closes #N` — c'est ce qui ferme automatiquement une issue GitHub au merge. **Mais si l'issue n'existe pas, `closes #N` ne ferme rien.**
 
@@ -119,7 +121,27 @@ Settings dépôt → onglet **Issues** → bouton **New issue** × 4. Vérifie q
 gh issue list
 ```
 
-Tu dois voir 4 issues `#1`, `#2`, `#3`, `#4` ouvertes. Tu peux maintenant attaquer **PR1**.
+Tu dois voir 4 issues `#1`, `#2`, `#3`, `#4` ouvertes.
+
+### 2. Choisir le bon modèle Claude
+
+Tape `/model` dans Claude Code pour switcher. Trois réflexes :
+
+| Phase | Modèle | Pourquoi |
+|---|---|---|
+| Tu discutes l'approche, tu valides un plan | **Opus** | Le plus capable, raisonne mieux |
+| Tu exécutes les prompts P1.1, P1.2, P1.3... | **Sonnet** | 80 % du travail. Rapide et économique |
+| Tu renommes, formates, retouches | **Haiku** | Mécanique, pas besoin de mobiliser plus |
+
+Pour la séance, **Sonnet** par défaut sur tous les prompts numérotés — c'est suffisant. Passe à **Opus** uniquement si tu débats d'une décision (ex : « pourquoi tu as choisi cette structure ? »).
+
+> ℹ️ Le quota Opus est ~5× plus serré que celui de Sonnet. Réserve-le aux moments où tu réfléchis vraiment.
+
+### 3. `/clear` entre deux PR
+
+Tu viens de merger PR1 ? Tu attaques PR2 ? **`/clear` avant le 1er prompt de PR2** — tu repars sur un contexte neuf, Claude relit `CLAUDE.md` tout seul. Coût 0. C'est rappelé en haut de chaque fiche de prompt.
+
+Tu peux maintenant attaquer **PR1**.
 
 ---
 
