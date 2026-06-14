@@ -34,12 +34,15 @@ générale de @docs/maquettes/maquette-desktop.png.
 Critère de succès : `npx live-server` ouvre la page, je vois le titre
 en haut, une zone centrale vide qui prend toute la place, un pied de
 page vide. Console propre.
-
-Commit en français : `feat: squelette de la page (refs #1)`.
 ```
 
 → **Test manuel** : `npx live-server` → tu vois le titre + zone vide + footer vide.
-→ **Commit** : `feat: squelette de la page (refs #1)`
+→ **À toi de jouer (Git Flow à la main)** :
+
+```bash
+git add -A
+git commit -m "feat: squelette de la page (refs #1)"
+```
 
 > 💡 On utilise `refs #1` (pas `closes`) sur les commits intermédiaires pour garder l'issue ouverte. C'est le **dernier** commit de la PR qui aura `closes #1`.
 
@@ -59,12 +62,15 @@ Respecte @CLAUDE.md (souveraineté : zéro CDN externe).
 Critère de succès : `npx live-server` ouvre la page, je vois la Suisse
 centrée, je peux zoomer/dézoomer/déplacer. L'attribution « ©
 OpenStreetMap contributors » est visible dans un coin. Console propre.
-
-Commit en français : `feat: carte de la Suisse (refs #1)`.
 ```
 
 → **Test manuel** : `npx live-server` → tu vois la Suisse.
-→ **Commit** : `feat: carte de la Suisse (refs #1)`
+→ **À toi de jouer (Git Flow à la main)** :
+
+```bash
+git add -A
+git commit -m "feat: carte de la Suisse (refs #1)"
+```
 
 ---
 
@@ -86,12 +92,15 @@ affichée) et @DESIGN.md pour la couleur de pin par défaut.
 Critère de succès : ~271 pins visibles sur la carte. Aucune erreur
 dans la console. Test « avion » : couper le wifi → recharger →
 le pied de page affiche un message d'erreur lisible.
-
-Commit en français : `feat: affichage des brasseries sur la carte (refs #1)`.
 ```
 
 → **Test manuel** : ~271 pins apparaissent.
-→ **Commit** : `feat: affichage des brasseries sur la carte (refs #1)`
+→ **À toi de jouer (Git Flow à la main)** :
+
+```bash
+git add -A
+git commit -m "feat: affichage des brasseries sur la carte (refs #1)"
+```
 
 > 💡 **Concept nouveau** : `fetch(...)` permet d'aller chercher des données sur Internet. Claude utilisera aussi `async/await` — un moyen d'attendre la réponse sans bloquer la page. Tu reverras ça en détail en C141.
 
@@ -113,12 +122,15 @@ du popup visible dans @docs/maquettes/maquette-desktop.png.
 Critère de succès : clic sur une pin → popup avec nom ; brasserie
 sans nom → « Brasserie sans nom » ; clic sur le lien site → nouvel
 onglet. Console propre.
-
-Commit en français : `feat: popup au clic sur une pin (closes #1)`.
 ```
 
 → **Test manuel** : clique sur une pin → popup avec nom.
-→ **Commit** : `feat: popup au clic sur une pin (closes #1)`
+→ **À toi de jouer (Git Flow à la main)** :
+
+```bash
+git add -A
+git commit -m "feat: popup au clic sur une pin (closes #1)"
+```
 
 ---
 
