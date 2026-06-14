@@ -1,5 +1,9 @@
 # Dépôt démo — Vibe coding C822 (15 juin 2026)
 
+![Aperçu de l'app Brasseries de Suisse — carte Leaflet avec ~271 pins (ambre = par défaut, vert = visitées), recherche en haut, compteur en bas](ressources/02-maquette/app-live.jpg)
+
+> **🎯 Voilà ce que tu vas construire pendant la séance** — app live sur <https://divtec-cejef.github.io/2026-c822-vibe-coding-demo/>.
+
 Ressources prêtes à copier-coller pendant la séance d'introduction au vibe coding du C822.
 
 > **À qui s'adresse ce dépôt** : apprentis ESIG1 inscrits au C822, séance du 15 juin 2026.
