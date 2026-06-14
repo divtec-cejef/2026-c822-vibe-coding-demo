@@ -33,12 +33,15 @@ dans @docs/maquettes/maquette-desktop.png.
 Critère de succès : le champ est visible dans l'en-tête, focusable
 (clic dedans → curseur). Le pied de page affiche « 271 brasseries
 affichées » au chargement (tant que le filtre est vide).
-
-Commit en français : `feat: champ de recherche et compteur (refs #2)`.
 ```
 
 → **Test manuel** : recharge → 271 affichées dans le pied de page.
-→ **Commit** : `feat: champ de recherche et compteur (refs #2)`
+→ **À toi de jouer (Git Flow à la main)** :
+
+```bash
+git add -A
+git commit -m "feat: champ de recherche et compteur (refs #2)"
+```
 
 ---
 
@@ -58,12 +61,15 @@ Règles métier (cf. @CLAUDE.md) :
 Critère de succès : je tape « lorraine » → 1 pin reste, compteur à 1.
 Je tape « LÖRRACH » → trouve aussi « lorrach ». J'efface → tout revient,
 compteur à 271. Console propre.
-
-Commit en français : `feat: filtre par nom insensible casse et accents (refs #2)`.
 ```
 
 → **Test manuel** : tape « lorraine » → 1 pin, compteur à 1. Tape « LÖRRACH » → trouve « lorrach ». Efface → 271.
-→ **Commit** : `feat: filtre par nom insensible casse et accents (refs #2)`
+→ **À toi de jouer (Git Flow à la main)** :
+
+```bash
+git add -A
+git commit -m "feat: filtre par nom insensible casse et accents (refs #2)"
+```
 
 ---
 
@@ -89,12 +95,15 @@ navigateur dans la config).
 Critère de succès : `npx playwright test --ui` lance Chromium, navigue
 sur la page, et le test passe (vert). Après push, l'Action `test.yml`
 tourne et affiche un badge ✅ sur la PR.
-
-Commit en français : `test: ajout d'un test automatique et de la CI (closes #2)`.
 ```
 
 → **Test local** : `npx playwright test --ui` → Playwright clique tout seul, test vert.
-→ **Commit** : `test: ajout d'un test automatique et de la CI (closes #2)`
+→ **À toi de jouer (Git Flow à la main)** :
+
+```bash
+git add -A
+git commit -m "test: ajout d'un test automatique et de la CI (closes #2)"
+```
 
 > 💡 **Concept nouveau** : un **test end-to-end** simule un utilisateur réel. **GitHub Actions** exécute ce test à ta place sur les serveurs GitHub à chaque push. Si le test passe → badge vert sur ta PR. Si le test échoue → tu sais qu'il y a un problème AVANT de merger.
 

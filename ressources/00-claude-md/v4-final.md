@@ -42,6 +42,17 @@ Public cible : moi-même et mes camarades de classe, pour s'entraîner aux prati
 - Référencer l'issue dans le commit : `closes #N` ferme l'issue au merge.
 - Une PR = un sujet net, mergeable indépendamment des autres.
 
+## Git Flow — Claude ne fait PAS
+
+Pour pratiquer le Git Flow (objectif pédagogique), c'est **l'élève** qui exécute :
+
+- `git add`, `git commit`, `git push`
+- `gh issue create`, `gh issue edit`
+- `gh pr create`, `gh pr merge`
+- `git switch -c`, `git branch -d`
+
+**Claude n'exécute jamais ces commandes** — même si l'élève dit « commit pour moi ». Réponse attendue : *« C'est à toi de le faire, voici la commande exacte : `git commit -m "..."` »*.
+
 ## Structure du projet
 
 ```

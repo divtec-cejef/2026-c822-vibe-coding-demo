@@ -199,12 +199,15 @@ Respecte @CLAUDE.md (HTML/CSS/JS pur, pas de CDN externe).
 
 Critère de succès : je marque une brasserie comme visitée, je recharge
 la page, la pin reste de la nouvelle couleur. Console propre.
-
-Commit en français : `feat: marquage des brasseries visitées (closes #3)`.
 ```
 
 → **Test manuel** : marque une brasserie, recharge → elle reste de la couleur « visitée ».
-→ **Commit** : `feat: marquage des brasseries visitées (closes #3)`
+→ **À toi de jouer (Git Flow à la main)** :
+
+```bash
+git add -A
+git commit -m "feat: marquage des brasseries visitées (closes #3)"
+```
 
 > 💡 **Concept nouveau** : `localStorage` permet au navigateur de mémoriser des informations même après fermeture. C'est comme une mini-base de données dans ton onglet. Tu reverras ça en C141 et au-delà.
 
@@ -217,12 +220,15 @@ Ajoute un nouveau test e2e dans @tests/ : au clic sur le bouton
 Respecte @CLAUDE.md (configuration Playwright déjà en place).
 
 Critère de succès : `npx playwright test` affiche 2 tests verts.
-
-Commit en français : `test: la pin change de couleur quand on marque visitée`.
 ```
 
 → **Test local** : `npx playwright test --ui` → tu vois maintenant 2 tests verts.
-→ **Commit** : `test: la pin change de couleur quand on marque visitée`
+→ **À toi de jouer (Git Flow à la main)** :
+
+```bash
+git add -A
+git commit -m "test: la pin change de couleur quand on marque visitée"
+```
 
 > 💡 **Le moment clé** : tu viens d'écrire ton 2ᵉ test en 30 secondes, juste avec un prompt. C'est ça, le filet de sécurité : pas une montagne à grimper, juste un prompt à formuler. Sur ton vrai projet C822 cette semaine, chaque feature peut être protégée comme ça.
 

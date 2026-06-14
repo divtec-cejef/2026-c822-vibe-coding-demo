@@ -39,12 +39,15 @@ statique).
 Critère de succès : après merge sur main, l'Action « pages » tourne
 verte, et le site est accessible sur
 https://<ton-handle>.github.io/<ton-repo>/.
-
-Commit en français : `feat: déploiement automatique sur GitHub Pages (closes #4)`.
 ```
 
 → **Test** : après merge sur main, l'Action « pages » tourne → site live sur `https://<ton-handle>.github.io/<ton-repo>/`.
-→ **Commit** : `feat: déploiement automatique sur GitHub Pages (closes #4)`
+→ **À toi de jouer (Git Flow à la main)** :
+
+```bash
+git add -A
+git commit -m "feat: déploiement automatique sur GitHub Pages (closes #4)"
+```
 
 > 💡 **Ce que tu obtiens** : ton site est en ligne, sans rien faire de plus que `git push`. C'est ce que tu mettras en place sur ton vrai projet C822 cette semaine (mais avec Infomaniak/FTP au lieu de Pages).
 
