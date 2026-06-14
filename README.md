@@ -55,11 +55,12 @@ Voir la liste des tags plus bas.
 │   ├── test.yml             # Lance le test e2e à chaque push
 │   └── pages.yml            # Publie le site quand une PR est mergée sur main
 └── ressources/              # ↓ Les artefacts à copier dans TON dépôt perso
-    ├── 00-claude-md/        # CLAUDE.md projet — 4 versions illustrant l'évolution itérative
-    │   ├── v1-stack-git.md       # Posé en premier : stack + Git Flow + conventions
-    │   ├── v2-design-ref.md      # + référence DESIGN.md (après §6.1b)
-    │   ├── v3-structure.md       # + structure projet + commandes utiles
-    │   └── v4-final.md           # + règles métier + souveraineté (version finale)
+    ├── 00-claude-md/
+    │   ├── global-modele.md      # ⭐ CLAUDE.md GLOBAL (à coller dans ~/.claude/CLAUDE.md une fois pour toutes)
+    │   ├── v1-stack-git.md       # CLAUDE.md projet v1 : stack + Git Flow + conventions
+    │   ├── v2-design-ref.md      # CLAUDE.md projet v2 : + référence DESIGN.md (après §6.1b)
+    │   ├── v3-structure.md       # CLAUDE.md projet v3 : + structure projet + commandes utiles
+    │   └── v4-final.md           # CLAUDE.md projet v4 : + règles métier + souveraineté (final)
     ├── 01-design-md/
     │   ├── DESIGN.md             # Identité visuelle (spec écrite, lue par Claude)
     │   ├── style.css             # Variables CSS issues de DESIGN.md (réutilisé dans l'app)
