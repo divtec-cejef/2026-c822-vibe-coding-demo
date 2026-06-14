@@ -1,7 +1,7 @@
 # CLAUDE.md — Projet « Brasseries de Suisse » (v4)
 
 > **Version 4 (finale) : v3 + règles métier + souveraineté + posture vibe coding.**
-> Version définitive utilisée pour les 3 PR de la séance.
+> Version définitive utilisée pour les 4 PR de la séance.
 >
 > Ce fichier est lu par Claude Code à chaque session dans ce dépôt. Il fixe le contexte, la stack et les règles.
 

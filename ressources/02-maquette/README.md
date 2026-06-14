@@ -63,7 +63,7 @@ Regarde les 2 PNG ci-dessus. **Liste ce qui manque** par rapport à une vraie ap
 
 1. Choisis-en **2 ou 3** qui te parlent.
 2. Ajoute-les dans `SPEC.md` comme nouvelles fonctionnalités **F7, F8, F9**… avec leur critère de succès vérifiable.
-3. Au moment du code, écris **1 PR par manque** (sur ton vrai projet C822, pas pendant la séance vibe coding qui a déjà 3 PR cadrées).
+3. Au moment du code, écris **1 PR par manque** (sur ton vrai projet C822, pas pendant la séance vibe coding qui a déjà 4 PR cadrées).
 4. À l'oral, **tu pourras dire** : « j'ai repéré ce manque sur la maquette de départ, voilà comment je l'ai traité, voilà le test qui le prouve ».
 
 **Ça vaut beaucoup plus de points** que de juste reproduire la maquette telle qu'elle est.
